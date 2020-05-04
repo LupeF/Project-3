@@ -12,6 +12,7 @@ header{
 
 header h1{
     padding-top: 1em;
+    font-family: 'Lobster', cursive;
 }
 
 body{
@@ -32,8 +33,14 @@ body{
     /* max-width: 20em; */
     margin: 3em auto;
     font-size: 1.3em;
+    font-family: 'Lobster', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
+p{
+    font-family: 'Lobster', cursive;
+    font-family: 'Patrick Hand', cursive;
+    }
   /****************/
  /* Contact form */
 /****************/
@@ -45,10 +52,13 @@ fieldset{
 
 legend{
     margin: 1.5em 0;
+    font-family: 'Lobster', cursive;
 }
 
 label{
     margin-bottom: 2em;
+    font-family: 'Lobster', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 textarea,
@@ -63,7 +73,8 @@ select[id="state"]{
     margin-bottom: 2.5em;
     border-radius: 5px;
     font-size: 1em;
-    font-family: 'Merriweather', serif;  
+    font-family: 'Merriweather', serif; 
+    transition: height 2s ease-out; 
 }
 
 #textarea{
@@ -94,7 +105,6 @@ input[id="zipcode"]{
     padding-top: 2em;
 
 }
-
 
 input[type="checkbox"]{
     margin:1em; 
@@ -133,7 +143,7 @@ input::placeholder{
 
 @media(min-width:768px){
     .container{
-        max-width: 47em;
+        max-width: 37em;
     }
 
     .flex{
