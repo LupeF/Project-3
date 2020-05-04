@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href=CSS/styles.css>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<header>
+    <h1>The Code Review</h1>
+</header>
+
+<div class="container">
+    <div class="col">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+    <form action="index.html" method="post">
+
+        <fieldset>
+        <legend><h2>Contact Information</h2></legend>
+            <div class="flex">
+                <label class="labels" for="name">Full Name</label><br>
+                <input type="text" id="name" name="user_name" required placeholder="Required"><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="mail"> Email Adress</label><br>
+                <input type="email" id="mail" name="user_email" required placeholder="Required"><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="number">Phone Number</label><br>
+                <input type="tel" id="number" name="user_number" required placeholder="Required" ><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="address">Street Address</label><br>
+                <input type="text" id="address" name="user_address" required placeholder="Required"  ><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="city">City</label><br>
+                <input type="text" id="city" name="user_city" required placeholder="Required"  ><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="state">State</label><br>
+                <select name="user_States" id="state" required >
+                <option value="">Choose State</option>
+                <optgroup label="West Coast"> 
+                    <option value="Alask">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="Texas">Texas</option>
+                </optgroup>
+                <optgroup label="East Coast">
+                    <option value="Alabama">Alabama</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="New York">New York</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                </optgroup>
+
+                </select><br>
+            </div>
+
+            <div class="flex">
+                <label class="labels" for="zipcode">Zip Code</label><br>
+                <input type="text" name="user_zipcode" id="zipcode" required placeholder="Required" >
+            </div> 
+        </fieldset>
+
+        <fieldset>
+
+            <legend class="legendb"><h2>Newsletter</h2></legend>
+            <div class="newsL">
+                <p class="paragraph">Select the newsletters you would like to recieve</p>
+            </div>
+            <input type="checkbox" id="htmlnews" name="user_htmlnews"><label for="htmlnews">HTML News</label><br>
+            <input type="checkbox" name="user_cssnews" id="cssnews"><label for="cssnews">CSS News</label><br>
+            <input type="checkbox" name="user_javascript" id="javascriptnews"><label for="javascriptnews">Javascript News</label>
+            
+            <p class="paragraph">Newsletter format</p>
+            <input type="radio" name="user_format" id="html" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" name="user_format" id="plaintext" value="Plain_text">
+            <label for="plaintext">Plain text</label>
+
+            <p class="paragraph">Other topics you'd like to hear about</p>
+            <textarea name="user_textarea" id="textarea" class="texta" ></textarea>
+
+            <button class="btn" type="submit">Sign Up</button>
+        </fieldset>
+            <p class="copyr"><i> &copy; Copyright The Code Review</i></p>
+        
+    </form>
+</div><!--container-->
+</body>
+</html>

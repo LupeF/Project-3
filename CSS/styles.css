@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+header h1{
+    padding-top: 1em;
+}
+
+body{
+    background: radial-gradient(aliceblue,silver);
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1em;
+} 
+
+.col{
+    margin: 2em 0;
+    padding-bottom: 2.5em;
+    border-bottom: 3px double;
+    border-width: 1em;
+    /* max-width: 20em; */
+    margin: 3em auto;
+    font-size: 1.3em;
+}
+
+  /****************/
+ /* Contact form */
+/****************/
+
+fieldset{
+    border: none;
+    text-align: left;
+}
+
+legend{
+    margin: 1.5em 0;
+}
+
+label{
+    margin-bottom: 2em;
+}
+
+textarea,
+button,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[id="state"]{
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Merriweather', serif;  
+}
+
+#textarea{
+    height: 3em;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select[id="state"]:focus{
+    background-color: skyblue;
+    height:4em;
+    transition: height 1.5s ease-out ;
+}
+
+input[id="zipcode"]{
+    width: 50%;
+}
+
+  /**************/
+ /* News Form  */
+/**************/
+
+.legendb{
+    border-top: 3px solid ;
+    width: 100%;
+    padding-top: 2em;
+
+}
+
+
+input[type="checkbox"]{
+    margin:1em; 
+}
+
+input[type="radio"]{
+    margin: 1em;
+}
+
+.paragraph{
+    padding: 1em 0;
+}
+
+.btn{
+    background-color: lightseagreen ;
+    color: white;
+    height: 105px;
+    cursor: pointer;
+}
+
+.copyr{
+    margin-bottom: 15em;
+}
+
+.texta{
+    height: 10em;
+}
+
+input::placeholder{
+    text-align: right;
+}
+
+  /*****************/
+ /* desktop view  */
+/*****************/
+
+@media(min-width:768px){
+    .container{
+        max-width: 47em;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .labels{
+        align-self: center;
+        min-width: 140px;
+    }
+    
+}
