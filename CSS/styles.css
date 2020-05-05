@@ -77,6 +77,10 @@ select[id="state"]{
     transition: height 2s ease-out; 
 }
 
+.texta{
+    text-align: left;
+}
+
 #textarea{
     height: 3em;
 }
@@ -126,11 +130,13 @@ input[type="radio"]{
 }
 
 .copyr{
+    padding-top: 8em;
     margin-bottom: 15em;
 }
 
 .texta{
     height: 10em;
+    margin-top: 1em;
 }
 
 input::placeholder{
